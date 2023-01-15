@@ -1,1 +1,1 @@
-# my-nginx-reverse-proxy
+# How To Configure Nginx as a Reverse Proxy
