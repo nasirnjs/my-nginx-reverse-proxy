@@ -30,12 +30,11 @@ server {
     ssl_certificate_key /etc/letsencrypt/live/yourdomain.com.bd/privkey.pem; 
     include /etc/letsencrypt/options-ssl-nginx.conf; 
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
-
 }
 server {
     if ($host = yourdomain.com.bd) {
         return 301 https://$host$request_uri;
-    } # managed by Certbot
+    }
 
   	server_name yourdomain.com.bd;
     listen 80;
