@@ -44,15 +44,15 @@ server {
 }
 
 Step3: Enable Nginx configuration
-sudo ln -s /etc/nginx/sites-available/yourdomain /etc/nginx/sites-enabled/
+`sudo ln -s /etc/nginx/sites-available/yourdomain /etc/nginx/sites-enabled/`
 
 You can now test your configuration file for syntax errors
-sudo nginx -t
+`sudo nginx -t`
 
 With no problems reported, restart Nginx to apply your changes
-sudo systemctl restart nginx
+`sudo systemctl restart nginx`
 
-sudo systemctl enable nginx
+`sudo systemctl enable nginx`
 
 
 
